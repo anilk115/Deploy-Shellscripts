@@ -1,0 +1,34 @@
+version: 0.0
+os: linux
+files:
+  - source: 
+    destination:  
+    overwrite: yes
+  - source:
+    destination: 
+    overwrite: yes
+  - source:
+    destination:
+    overwrite: yes
+permissions:
+   - object:
+     pattern: "**"
+     owner:
+     group:
+     type:
+       - file
+hooks:
+  BeforeInstall:
+    - location: 
+      runas: root
+  ApplicationStart:
+    - location:
+      timeout: 300
+      runas:
+  ValidateService:
+    - location: 
+      timeout: 300
+      runas:
+  ApplicationStop:
+    - location:
+      runas:

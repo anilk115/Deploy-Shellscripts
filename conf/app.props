@@ -1,0 +1,7 @@
+
+spring.data.mongodb.uri=mongodb://
+
+env=DEV
+log.dir=/opt/
+log.level.content.registry=DEBUG
+log.level.root=WARN
